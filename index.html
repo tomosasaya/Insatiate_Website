@@ -1,0 +1,131 @@
+<!--
+This site is a static reconstruction of a custom Shopify theme
+originally built for INSATIATE.
+Original Liquid theme code available theme.liquid.
+-->
+
+<!doctype html>
+<html class="js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://tomosasaya.github.io/Insatiate_Website/">
+
+  <title>INSATIATE</title>
+  <meta name="description" content="INSATIATE – Apparel brand portfolio showcase.">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- ===== Header styles ===== -->
+  <style>
+
+    @media (min-width: 749px) {
+      .section-header .header-wrapper { background: transparent; }
+      .section-header.scrolled-past-header .header-wrapper {
+        transition: background-color 0.5s ease-in-out;
+      }
+      .header__heading-logo { filter: invert(1); }
+      .section-header.scrolled-past-header .header__heading-logo { filter: invert(0); }
+      .header-wrapper:hover { background: #F1F1F1 !important; }
+      #MainContent { margin-top: -150px; }
+    }
+
+    @media (max-width: 749px) {
+      #MainContent { margin-top: -93px; }
+    }
+  </style>
+
+  <style>
+    body .section-header.scrolled-past-header .header-wrapper {
+      background: #F1F1F1;
+    }
+  </style>
+
+  <!-- Base stylesheet -->
+  <link rel="stylesheet" href="assets/base.css">
+
+  <!-- Scripts -->
+  <script src="assets/constants.js" defer></script>
+  <script src="assets/pubsub.js" defer></script>
+  <script src="assets/global.js" defer></script>
+
+  <script>
+    document.documentElement.className = 'js';
+  </script>
+</head>
+
+<body class="gradient animate--hover-fade">
+
+  <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+    Skip to content
+  </a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="section-header">
+    <div class="header-wrapper">
+      <h1 class="header__heading-logo">INSATIATE</h1>
+      <nav class="header__icons">
+        <a href="#">Shop</a>
+        <a href="#">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main id="MainContent" class="content-for-layout" role="main" tabindex="-1">
+    <section style="padding:4rem; text-align:center;">
+      <h2>INSATIATE</h2>
+      <p>This is a static portfolio version of a Shopify storefront.</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem;">
+        <div>
+          <img src="assets/product1.jpg" alt="Product">
+          <h3>Signature Tee</h3>
+          <p>$32.00</p>
+        </div>
+        <div>
+          <img src="assets/product2.jpg" alt="Product">
+          <h3>Essential Tee</h3>
+          <p>$30.00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="padding:3rem; background:#f1f1f1; text-align:center;">
+    <p>&copy; 2025 INSATIATE</p>
+    <nav>
+      <a href="#">Privacy Policy</a> ·
+      <a href="#">Terms</a>
+    </nav>
+  </footer>
+
+  <!-- ================= JS GLOBALS (stubbed) ================= -->
+  <script>
+    window.shopUrl = 'https://example.netlify.app';
+
+    window.routes = {
+      cart_add_url: '#',
+      cart_change_url: '#',
+      cart_update_url: '#',
+      cart_url: '#',
+      predictive_search_url: '#'
+    };
+
+    window.cartStrings = {
+      error: 'Cart error',
+      quantityError: 'Quantity error'
+    };
+
+    window.variantStrings = {
+      addToCart: 'Add to cart',
+      soldOut: 'Sold out',
+      unavailable: 'Unavailable'
+    };
+  </script>
+
+</body>
+</html>
