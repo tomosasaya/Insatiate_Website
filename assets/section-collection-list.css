@@ -1,0 +1,103 @@
+.collection-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.collection-list-title {
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .collection-list:not(.slider) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-collection-list .page-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-collection-list .collection-list:not(.slider) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+.collection-list__item:only-child {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .slider.collection-list--1-items {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .slider.collection-list--1-items,
+  .slider.collection-list--2-items,
+  .slider.collection-list--3-items,
+  .slider.collection-list--4-items {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .collection-list__item a:hover {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .collection-list.slider .collection-list__item {
+    max-width: 100%;
+  }
+}
+
+.collection-list-view-all {
+  margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 749px) {
+.card:not(.ratio)>.card__content:last-child {
+    z-index: 9;
+}
+.card--standard>.card__content .card__information:last-child {
+    /* padding-left: 180px;
+    padding-right: 20px; */
+    margin-top: -230px;
+    display: flex;
+    justify-content: center;
+}
+.card--standard>.card__content:last-child .card__information:last-child .full-unstyled-link:last-child{
+    color: #fff;
+}
+.card--standard>.card__content:last-child .card__information:last-child .icon-wrap:last-child{
+    display: none;
+}
+}
+
+@media screen and (min-width: 750px) {
+.card:not(.ratio)>.card__content:last-child {
+    z-index: 9;
+}
+.card--standard>.card__content .card__information:last-child {
+    /* padding-left: 180px;
+    padding-right: 20px; */
+    margin-top: -300px;
+    display: flex;
+    justify-content: center;
+}
+.card--standard>.card__content:last-child .card__information:last-child .full-unstyled-link:last-child{
+    color: #fff;
+}
+.card--standard>.card__content:last-child .card__information:last-child .icon-wrap:last-child{
+    display: none;
+}
+.full-unstyled-link:hover {
+    text-decoration: underline;
+}
+}
